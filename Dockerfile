@@ -4,7 +4,6 @@ WORKDIR /A_DONOR_WEB_APP
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install torch==1.9.0+cpu torchvision==0.10.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
 COPY . .
 
